@@ -1,0 +1,109 @@
+\documentclass[a4paper,twoside,12pt]{report}
+
+\usepackage[latin1]{inputenc}
+\usepackage[cyr]{aeguill}
+\usepackage [francais]{babel}
+\usepackage [T1] {fontenc}
+\usepackage{xspace}
+\usepackage[toc, page]{appendix}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{floatrow}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{bbm}
+\usepackage{amsbsy}
+\usepackage[ruled, vlined]{algorithm2e}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{geometry}
+
+\title{Rapport de synthèse\\
+ 1er round}
+%\author{Equipe ID}
+
+\geometry{hmargin=2.5cm,vmargin=2.5cm}
+
+\begin{document}
+
+\maketitle
+\pagestyle{empty}
+
+\pagestyle{plain} 
+\renewcommand{\chaptername}{Partie}
+
+\chapter{Méthode}\label{mtd}
+
+Présenter et justifier qualitativement et (ou) quantitativement :
+
+\begin{itemize}
+\vspace{9pt}
+\item les hypothèses formulées (s'il y a lieu) ;
+\vspace{9pt}
+\item les variables écartées (sur quelle base?) ;
+\vspace{9pt}
+\item les cas exclus (justifier) ;
+\vspace{9pt}
+\item les variables construites (s'il y en a) ; 
+\vspace{9pt}
+\item les tests statistiques conduits (s'il y a lieu) ;
+\vspace{9pt}
+\item le type de modèle utilisé.
+\end{itemize}
+
+\vspace{9pt}
+Vous êtes invités à décrire formellement vos résultats à l'aide de l'environnement équation : \\
+\vspace{9pt}
+\begin{equation*}
+\begin{aligned}
+\text{Modèle qui tue}\, (x_{i_{0}}) \quad & = \underset{\text{modèle }\in \mathcal{M}}{\max}\,\text{modèle}(x_{i_{0}}) \\
+& = \frac{\mathrm{e}^{f(x_{i_{0}})}}{\sum_{i=1}^{d} \mathrm{e}^{f(x_{i})}} + \quad \text{plein d'autres choses}
+\end{aligned}
+\end{equation*}
+
+
+\section{Détails}\label{détails}
+
+Bien entendu, il est utile de structurer la partie \ref{mtd} (et les autres) en sections pour faciliter la vie du reviewer.
+
+\chapter{Résultat}
+
+Détailler les différents tests menés et le résultat retenu pour conclure :\\
+
+\begin{itemize}
+\vspace{9pt}
+\item quels sont les odd-ratios étudiés, leurs unités et leurs direction pour la question $1$?\\
+\item Peut-on définir des intervalles de confiance ?\\
+\item de même pour la question 2.
+\end{itemize}
+
+\vspace{9pt}
+Répondre ensuite à la question \og en texte plein \fg, c'est-à-dire par des phrases et non des chiffres. En particulier, indiquer sur une échelle de valeurs (de 1: très peu probable à 5: très probable) quelle est la propention d'un arbitre à donner un carton rouge à un joueur du fait de sa couleur. De même pour la question 2.\\
+
+
+Il est également souhaitable d'illustrer vos résultats :
+
+\begin{figure}[h]
+	\includegraphics[width=0.6\textwidth, center]{graphique}
+	\caption{Exemple d'insertion de figure avec légende.}
+\label{illustration}
+\end{figure}
+
+\chapter{Discussion}
+
+Commenter les résultats obtenus :
+\begin{itemize}
+\vspace{9pt}
+\item porter un regard critique sur la méthode employée ;
+\vspace{9pt}
+\item exprimer les limites des résultats (quantitativement ou qualitativement)
+\vspace{9pt}
+\item conclure sur la réponse apportée à la question.
+\end{itemize}
+
+\end{document}
